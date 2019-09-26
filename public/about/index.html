@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>IOTA Guide</title>
+
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <script type="text/javascript">
+  	var isLoggedIn = false;
+  </script>
+</head>
+<body>
+<div class="wrapper" id="top-nav">
+  <div class="container_fluid" id="top-menu">
+    <div class="container">
+      <div class="row pt-5">
+        
+        
+<div class="col-sm-4 text-center" id="logo-links">
+
+  <img src="/img/iota-guide-logo.png" alt="IOTA Guide Logo">
+  <a href="/"><h2 class="mt-2">IOTA Guide</h2></a>
+  <p class="mt-3">
+    <i class="fab fa-twitter mr-4"></i>
+    <i class="fab fa-facebook-f mr-4"></i>
+    <i class="fas fa-rss"></i>
+  </p>
+
+</div>
+
+        
+        <div class="col-sm-4">
+          <p class="title">Getting Started</p>
+          <nav>
+            <ul>
+              
+              <li><a href="/about" class="greater-than">About IOTA Guide</a></li>
+              
+              <li><a href="#" class="greater-than">Articles</a></li>
+              <li><a href="/donate-contribute" class="greater-than">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-4">
+          <p class="title">L/EARN IOTA?</p>
+          <p>Want to earn IOTA whilst learning about IOTA?</p>
+          <p><a href="#" class="greater-than">Find out more</a></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div id="menu-toggle" class="text-center">
+    <i class="fas fa-angle-double-down"></i>
+  </div>
+</div>
+<div class="wrapper" id="top-wrapper">
+    <div class="container pt-5 text-center">
+        <div class="row pt-5">
+            <div class="col">
+                <h1 class="mb-3"><a href="/about">About IOTA Guide</a></h1>
+                <p>On a mission to raise IOTA awareness, educate developers in using IOTA and providing the ultimate online learning management system for IOTA.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+        <main class="col">
+            <div class="row">
+                <h2 class="mb-4">How it works</h2>
+                <p>IOTA Guide aims to use the basic principle style of Token Economy education to effectively drive awareness and development of IOTA.</p>
+                <blockquote>Token economies are based on the principles of applied behavior analysis (ABA) and emphasize the use of positive reinforcement to target behavior change. Token economies help students to visualize progress, accept and work for delayed reinforcement, learn to self-monitor, and learn to regulate behavior.</blockquote>
+                <p>The way this works is simple. Desired behavior will be rewarded.</p>
+                <h2 class="mb-4">Rewarded behavior examples</h2>
+                <p>This list is not definitive and is subject to change as the site develops</p>
+                <table class="table mb-5">
+                  <thead>
+                    <tr>
+                      <th scope="col">Behavior</th>
+                      <th scope="col">Reward (IOTA)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">User signs up and verifies email</th>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">User promotes content</th>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">User refers friends</th>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">User completes test at each section end</th>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">User downloads trinity and sends 0i transaction (a barcode and special message will be made for each user)</th>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">User completes official IOTA Dev certification and provides certification hash for verification</th>
+                      <td>TBC</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2 class="mb-4">Avoiding abuse of system</h2>
+                <p>The following steps are prevention of abuse of system measures. This list is not exhaustive and will change to adapt the usage of the site.</p>
+                <ul>
+                    <li>Sign up limit per IP Address</li>
+                    <li>Timed awards between sections</li>
+                    <li>Section tests to be completed before award</li>
+                    <li>Minimum required cash out of reward</li>
+                    <li>To avoid dead/temporary email accounts, email verification for cash outs</li>
+                    <li>Promotion longevity greater than X days (avoids tweets and post deletion)</li>
+                </ul>
+            </div>
+        </main>
+</div>
+
+<div id="section-progress-meta" style="display: none;">
+    <h4 class="mb-3">Mark as complete</h4>
+<p>By completing this section you will receive <span class="iota-reward">500<span>iota</span></span></p>
+<p><a class="btn btn-outline-primary" data-section='getting-started' data-topic='what-is-iota'>Mark as complete</a></p>
+</div>
+
+<div class="wrapper bg-light">
+    <div class="container mt-5">
+        <div class="row p-5 text-center">
+            
+        </div>
+    </div>
+</div>
+
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  $('#menu-toggle').click(function() {
+    if($('#top-menu').hasClass('expanded')) {
+      $('#top-menu').removeClass('expanded')
+      $('#menu-toggle').removeClass('menu-icon-down');
+
+    } else {
+      $('#top-menu').addClass('expanded')
+      $('#menu-toggle').addClass('menu-icon-down');
+    }
+  });
+
+  $('#play-iota-sound').click(function() {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', './mp3/iota_en_gb.mp3');
+
+    $(audioElement)[0].play()
+  });
+
+  $('.carousel').carousel()
+</script>
+</body>
+</html>
