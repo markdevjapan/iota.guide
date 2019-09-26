@@ -8,7 +8,7 @@ draft: false
 	<div class="container pt-5 text-center">
 		<div class="row pt-5">
 			<div class="col">
-				<h1 class="mb-3"><a href="/about">About IOTA Guide</a></h1>
+				<h1 class="mb-3"><a href="{{ .Site.BaseURL }}/about">About IOTA Guide</a></h1>
 				<p>On a mission to raise IOTA awareness, educate developers in using IOTA and providing the ultimate online learning management system for IOTA.</p>
 			</div>
 		</div>

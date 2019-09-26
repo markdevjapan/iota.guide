@@ -8,7 +8,7 @@ draft: false
 	<div class="container pt-5 text-center">
 		<div class="row pt-5">
 			<div class="col">
-				<h1 class="mb-3"><a href="/what-is-iota">What is IOTA?</a></h1>
+				<h1 class="mb-3"><a href="{{ .Site.BaseURL }}/what-is-iota">What is IOTA?</a></h1>
 				<p>IOTA is the revolutionary crypto currency which is built on an open-source,  blockless, scalable, lightweight and feeless distributed ledger called the Tangle.</p>
 				<p class="mt-4"><a href="https://assets.ctfassets.net/r1dr6vzfxhev/2t4uxvsIqk0EUau6g2sw0g/45eae33637ca92f85dd9f4a3a218e1ec/iota1_4_3.pdf" class="btn btn-outline-primary" target="_blank">Download and Read Whitepaper</a></p>
 			</div>
