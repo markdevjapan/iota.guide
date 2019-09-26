@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IOTA Guide</title>
-    <link>https://iota.guide/</link>
+    <link>https://thatgaijinguy.github.io/iota.guide/</link>
     <description>Recent content on IOTA Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Sep 2019 21:08:40 +0100</lastBuildDate>
     
-	<atom:link href="https://iota.guide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thatgaijinguy.github.io/iota.guide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://iota.guide/about/</link>
+      <link>https://thatgaijinguy.github.io/iota.guide/about/</link>
       <pubDate>Tue, 24 Sep 2019 21:08:40 +0100</pubDate>
       
-      <guid>https://iota.guide/about/</guid>
+      <guid>https://thatgaijinguy.github.io/iota.guide/about/</guid>
       <description>About IOTA Guide On a mission to raise IOTA awareness, educate developers in using IOTA and providing the ultimate online learning management system for IOTA.
     How it works IOTA Guide aims to use the basic principle style of Token Economy education to effectively drive awareness and development of IOTA.
 Token economies are based on the principles of applied behavior analysis (ABA) and emphasize the use of positive reinforcement to target behavior change.</description>
@@ -24,10 +24,10 @@ Token economies are based on the principles of applied behavior analysis (ABA) a
     
     <item>
       <title>How to Donate, Contribute and Help</title>
-      <link>https://iota.guide/donate-contribute/</link>
+      <link>https://thatgaijinguy.github.io/iota.guide/donate-contribute/</link>
       <pubDate>Mon, 23 Sep 2019 23:56:37 +0100</pubDate>
       
-      <guid>https://iota.guide/donate-contribute/</guid>
+      <guid>https://thatgaijinguy.github.io/iota.guide/donate-contribute/</guid>
       <description>Here&#39;s how you can help IOTA Guide This site was created with the mission to help educate and raise awareness of IOTA. Find out below how you can help us achieve that goal.
     Topics Covered:
  Donate Contribute Promote Translate Feedback/Suggestions   Donate The easiest way to help is donate crypto. All donations go towards keeping the servers and bots running, rewarding the learners, giveaways and other promotions.</description>
@@ -35,10 +35,10 @@ Token economies are based on the principles of applied behavior analysis (ABA) a
     
     <item>
       <title>What Is Iota</title>
-      <link>https://iota.guide/what-is-iota/</link>
+      <link>https://thatgaijinguy.github.io/iota.guide/what-is-iota/</link>
       <pubDate>Mon, 23 Sep 2019 17:30:22 +0100</pubDate>
       
-      <guid>https://iota.guide/what-is-iota/</guid>
+      <guid>https://thatgaijinguy.github.io/iota.guide/what-is-iota/</guid>
       <description>What is IOTA? IOTA is the revolutionary crypto currency which is built on an open-source, blockless, scalable, lightweight and feeless distributed ledger called the Tangle.
 Download and Read Whitepaper
     Topics Covered:

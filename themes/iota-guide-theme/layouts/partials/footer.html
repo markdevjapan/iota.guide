@@ -1,5 +1,5 @@
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ .Site.BaseURL }}/vendor/jquery/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
   $('#menu-toggle').click(function() {
     if($('#top-menu').hasClass('expanded')) {
@@ -14,7 +14,7 @@
 
   $('#play-iota-sound').click(function() {
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', './mp3/iota_en_gb.mp3');
+    audioElement.setAttribute('src', '{{ .Site.BaseURL }}/mp3/iota_en_gb.mp3');
 
     $(audioElement)[0].play()
   });
