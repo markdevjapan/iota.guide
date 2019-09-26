@@ -1,0 +1,13 @@
+{{if not .IsHome}}
+<div class="col-sm-4 text-center" id="logo-links">
+{{ end }}
+  <img src="/img/iota-guide-logo.png" alt="IOTA Guide Logo">
+  <a href="/">{{if not .IsHome}}<h2 class="mt-2">{{ end }}{{if .IsHome}}<h1 class="mt-3">{{ end }}IOTA Guide{{if .IsHome}}</h1>{{ end }}{{if not .IsHome}}</h2>{{ end }}</a>
+  <p class="mt-3">
+    <i class="fab fa-twitter mr-4"></i>
+    <i class="fab fa-facebook-f mr-4"></i>
+    <i class="fas fa-rss"></i>
+  </p>
+{{if not .IsHome}}
+</div>
+{{ end }}

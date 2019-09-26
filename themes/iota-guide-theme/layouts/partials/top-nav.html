@@ -1,0 +1,38 @@
+<div class="wrapper" id="top-nav">
+  <div class="container_fluid" id="top-menu">
+    <div class="container">
+      <div class="row pt-5">
+        {{if not .IsHome}}
+        {{ partial "logo-links.html" . }}
+        {{end}}
+        <div class="col-sm-4">
+          <p class="title">Getting Started</p>
+          <nav>
+            <ul>
+              <!-- <li><a href="#" class="greater-than">Live Dashboard</a></li> -->
+              <li><a href="/about" class="greater-than">About IOTA Guide</a></li>
+              <!-- <li><a href="#" class="greater-than">How to buy IOTA</a></li> -->
+              <li><a href="#" class="greater-than">Articles</a></li>
+              {{if not .IsHome}}<li><a href="/donate-contribute" class="greater-than">Donate</a></li>{{ end }}
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-4">
+          <p class="title">L/EARN IOTA?</p>
+          <p>Want to earn IOTA whilst learning about IOTA?</p>
+          <p><a href="#" class="greater-than">Find out more</a></p>
+        </div>
+        {{if .IsHome}}
+        <div class="col-sm-4">
+          <p class="title">Donate</p>
+          <p>All donations help to keep our servers running, our bots promoting and the people learning about IOTA.</p>
+          <p><a href="/donate-contribute" class="greater-than">How to donate</a></p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div id="menu-toggle" class="text-center">
+    <i class="fas fa-angle-double-down"></i>
+  </div>
+</div>
