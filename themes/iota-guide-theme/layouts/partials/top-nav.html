@@ -10,10 +10,10 @@
           <nav>
             <ul>
               <!-- <li><a href="#" class="greater-than">Live Dashboard</a></li> -->
-              <li><a href="/about" class="greater-than">About IOTA Guide</a></li>
+              <li><a href="{{ .Site.BaseURL }}/about" class="greater-than">About IOTA Guide</a></li>
               <!-- <li><a href="#" class="greater-than">How to buy IOTA</a></li> -->
               <li><a href="#" class="greater-than">Articles</a></li>
-              {{if not .IsHome}}<li><a href="/donate-contribute" class="greater-than">Donate</a></li>{{ end }}
+              {{if not .IsHome}}<li><a href="{{ .Site.BaseURL }}/donate-contribute" class="greater-than">Donate</a></li>{{ end }}
             </ul>
           </nav>
         </div>
@@ -26,7 +26,7 @@
         <div class="col-sm-4">
           <p class="title">Donate</p>
           <p>All donations help to keep our servers running, our bots promoting and the people learning about IOTA.</p>
-          <p><a href="/donate-contribute" class="greater-than">How to donate</a></p>
+          <p><a href="{{ .Site.BaseURL }}/donate-contribute" class="greater-than">How to donate</a></p>
         </div>
         {{ end }}
       </div>
