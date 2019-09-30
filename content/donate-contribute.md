@@ -90,11 +90,10 @@ draft: false
 	</div>
 </div>
 
-<div class="wrapper bg-light">
+<!-- <div class="wrapper bg-light">
 	<div class="container mt-5">
 		<div class="row p-5 text-center">
 			{{< section-progress reward="500" unit="iota" >}}
 		</div>
 	</div>
-</div>
-
+</div> -->

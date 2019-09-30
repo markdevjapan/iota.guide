@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>IOTA Guide</title>
+
+  <link href="https://iota.guide/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://iota.guide/css/style.css" rel="stylesheet">
+  <script type="text/javascript">
+  	var isLoggedIn = false;
+  </script>
+</head>
+<body>
+<div class="wrapper" id="top-nav">
+  <div class="container_fluid" id="top-menu">
+    <div class="container">
+      <div class="row pt-5">
+        
+        
+<div class="col-sm-4 text-center" id="logo-links">
+
+  <img src="https://iota.guide/img/iota-guide-logo.png" alt="IOTA Guide Logo">
+  <a href="https://iota.guide"><h2 class="mt-2">IOTA Guide</h2></a>
+  
+
+</div>
+
+        
+        <div class="col-sm-4">
+          <p class="title">Getting Started</p>
+          <nav>
+            <ul>
+              
+              <li><a href="https://iota.guide/about" class="greater-than">About IOTA Guide</a></li>
+              
+              
+              <li><a href="https://howtobuyiota.co.uk" target="_blank" class="greater-than">How to buy IOTA</a></li>
+              <li><a href="https://iota.guide/donate-contribute" class="greater-than">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-4">
+          <p class="title">L/EARN IOTA?</p>
+          <p>Want to earn IOTA whilst learning about IOTA?</p>
+          <p><a href="https://iota.guide/learn" class="greater-than">Find out more</a></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div id="menu-toggle" class="text-center">
+    <i class="fas fa-angle-double-down"></i>
+  </div>
+</div>
+<div class="wrapper" id="top-wrapper">
+    <div class="container pt-5 text-center">
+        <div class="row pt-5">
+            <div class="col">
+                <h1 class="mb-3"><a href="https://iota.guide/article/how-to-generate-iota-wallet-seed">How to generate your IOTA Wallet Seed</a></h1>
+                <p>On a mission to raise IOTA awareness, educate developers in using IOTA and providing the ultimate online learning management system for IOTA.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <main class="col">
+        <div class="row">
+            <h2>Generate your seed on linux:</h2>
+            <pre><code>cat /dev/urandom |tr -dc A-Z9|head -c${1:-81}</code></pre>
+            <h2>Generate your seed on Mac:</h2>
+            <p>Open Terminal and type or paste the following then press enter:</p>
+            <pre><code>cat /dev/urandom |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1</code></pre>
+            <h2>Generate your seed online:</h2>
+            <p>We used to link to a website here but not any more. It is no longer safe to use any website to generate your IOTA seed as many sites have been found to be malicious and unsafe. Instead, if you want to generate your IOTA Seed, download the Trinity wallet and use the in-build feature</p>
+        </div>
+    </main>
+</div>
+
+<script src="https://iota.guide/vendor/jquery/jquery.min.js"></script>
+<script src="https://iota.guide/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  $('#menu-toggle').click(function() {
+    if($('#top-menu').hasClass('expanded')) {
+      $('#top-menu').removeClass('expanded')
+      $('#menu-toggle').removeClass('menu-icon-down');
+
+    } else {
+      $('#top-menu').addClass('expanded')
+      $('#menu-toggle').addClass('menu-icon-down');
+    }
+  });
+
+  $('#play-iota-sound').click(function() {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'https:\/\/iota.guide/mp3/iota_en_gb.mp3');
+
+    $(audioElement)[0].play()
+  });
+
+  $('.carousel').carousel()
+</script>
+</body>
+</html>
