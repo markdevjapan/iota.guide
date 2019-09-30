@@ -1,4 +1,4 @@
-baseURL = "https://thatgaijinguy.github.io/iota.guide"
+baseURL = "https://iota.guide"
 languageCode = "en-us"
 title = "IOTA Guide"
 theme = "iota-guide-theme"
