@@ -18,6 +18,8 @@ draft: false
 <div class="container mt-5">
 		<main class="col">
 			<div class="row">
+				<h2 class="mb-4">Who is this for?</h2>
+				<p>The main aim of this site is to get people involved with IOTA and to raise awareness. That means, guiding them through the basics of IOTA and introducing them to the technology. Converting first time users into IOTA wallet holders and active community members. The second aim of this site will be to bridge the steep learning curve into the IOTA protocol for developers with an aim of being a stepping stone onto the official IOTA developer course and finally achieving their official IOTA developer certification</p>
 				<h2 class="mb-4">How it works</h2>
 				<p>IOTA Guide aims to use the basic principle style of Token Economy education to effectively drive awareness and development of IOTA.</p>
 				<blockquote>Token economies are based on the principles of applied behavior analysis (ABA) and emphasize the use of positive reinforcement to target behavior change. Token economies help students to visualize progress, accept and work for delayed reinforcement, learn to self-monitor, and learn to regulate behavior.</blockquote>
@@ -54,6 +56,10 @@ draft: false
 				    </tr>
 				    <tr>
 				      <th scope="row">User completes official IOTA Dev certification and provides certification hash for verification</th>
+				      <td>TBC</td>
+				    </tr>
+					<tr>
+				      <th scope="row">User subscribes to IOTA subreddit/joins discord etc...</th>
 				      <td>TBC</td>
 				    </tr>
 				  </tbody>

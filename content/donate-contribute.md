@@ -18,13 +18,13 @@ draft: false
 <div class="container mt-5">
 	<div class="row">
 		<div class="col" id="left-column">
-			<p class="tite">Topics Covered:</p>
+			<p class="title">Topics Covered:</p>
 			<ul>
 				<li><a href="#">Donate</a></li>
 				<li><a href="#">Contribute</a></li>
 				<li><a href="#">Promote</a></li>
 				<li><a href="#">Translate</a></li>
-				<li><a href="#">Feedback/Suggestions</a></li>
+				<li><a href="#">Feedback</a></li>
 			</ul>
 		</div>
 		<main class="col">
@@ -36,9 +36,10 @@ draft: false
 			</div>
 			<div class="row pb-5 iota-donation-address">
 				<div class="col text-center">
-					<img src="{{ .Site.BaseURL }}/img/iota-donation-address.png" alt="Donate IOTA" />
+					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA" class="mb-5" />
+					<p>Address:</p>
+					<p>IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNU<br/>WOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW</p>
 				</div>
-				<div class="col">Address: <br/>IQAXDZSNSUYIDPGD9MPG<br/>ETTIPZEHLFCGAWQKYNKA<br/>W9FSML9XLUHLTNSTDRCN<br/>LVPJBXOJFJWXRZVXCCMOZMQVFTVFVX</div>
 			</div>
 			<div class="row">
 				<h2 class="mb-4">Donate other crypto</h2>
@@ -52,19 +53,19 @@ draft: false
 				  <tbody>
 				    <tr>
 				      <th scope="row">BTC</th>
-				      <td>hg6thgfd67t32ugd1dsdaf4fdsr54</td>
+				      <td>3E6z48KzwwB4AM61BzzeGcBURDr2GnWPcu</td>
 				    </tr>
 				    <tr>
 				      <th scope="row">LTC</th>
-				      <td>hg6thgfd67t32ugd1dsdaf4fdsr54</td>
+				      <td>MMqhXu6UWVNthPMqqTn29YWdNCFQ2b9ixe</td>
 				    </tr>
 				    <tr>
 				      <th scope="row">ETH</th>
-				      <td>hg6thgfd67t32ugd1dsdaf4fdsr54</td>
+				      <td>0x225fef739DF5e22Fbb7036B183A75E6434e972Ba</td>
 				    </tr>
 				    <tr>
 				      <th scope="row">BNB</th>
-				      <td>hg6thgfd67t32ugd1dsdaf4fdsr54</td>
+				      <td>bnb1a8ydxphn5zqumfpwhtuv0jxj2hxvwpcwe8n88h</td>
 				    </tr>
 				  </tbody>
 				</table>
