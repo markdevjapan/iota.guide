@@ -1,1 +1,216 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/54cc3abd02.js" crossorigin="anonymous"></script> <title>L/EARN IOTA - Sign up</title></head><body><div class="wrapper"><div class="container_fluid mt-5"><div id="left" class="br-left"><div class="row"><div class="col"><h2 class="text-center mt-3 mb-3">L/EARN IOTA</h2><p class="pl-3 pr-3">Development is underway and Phase 1 will hopefully be launching very soon. You can use the "Get Notified" form to sign up to the mailing list and be one of the first to know when any news happens. Your email will only ever be used to contact you regarding the progress of this platform.</p><p class="pl-3 pr-3"> You can find more about this project by visiting <a href="/about">About IOTA Guide</a> and if you like what is happening then feel free to <a href="/donate-contribute">Donate</a></p><p class="pt-5 pl-3 pr-3 text-center"><a href="/" class="btn btn-outline-secondary">Back to IOTA Guide</a></p></div></div></div><div id="right" class="br-right"><div class="row"><div class="col"><h2 class="text-center mt-3">Get Notified</h2><p class="text-center" id="signup-status"></p><div class="p-4 pt-0 mt-0"><div class="form-group"> <label for="NameInput">Name</label> <input type="text" class="form-control" id="nameInput" placeholder="Ben Lewisham"></div><div class="form-group"> <label for="EmailInput">Email</label> <input type="text" class="form-control" id="emailInput" placeholder="ben@example.com"><br/> <small id="emailValidationStatus"></small></div><div class="text-center"><p><small>By signing up you agree for the storing of your email address to be used ONLY to contact you with updates to this platform</small></p> <button type="submit" class="btn btn-primary" id="validate">Sign up</button></div></div></div></div></div></div></div><style type="text/css">body,html{height:100vh}body{background-color:#f1f1f1;font-weight:600;font-family:Montserrat,sans-serif}.wrapper{width:100%}.v-align{position:relative;top:50%;transform:translateY(-50%)}.container_fluid{display:flex;flex-wrap:wrap;width:850px;max-width:95%;margin:0 auto}#left{padding:10px;background-color:#192a56;flex-grow:1;color:#fff;max-width:425px;min-width:400px;-webkit-box-shadow:-1px 0 5px 0 rgba(196,196,196,.75);-moz-box-shadow:-1px 0 5px 0 rgba(196,196,196,.75);box-shadow:-1px 0 5px 0 rgba(196,196,196,.75)}#right{padding:10px;background-color:#fff;flex-grow:1;max-width:425px;min-width:400px;-webkit-box-shadow:1px 0 5px 0 rgba(196,196,196,.75);-moz-box-shadow:1px 0 5px 0 rgba(196,196,196,.75);box-shadow:1px 0 5px 0 rgba(196,196,196,.75)}.br-left{-webkit-border-top-left-radius:10px;-webkit-border-bottom-left-radius:10px;-moz-border-radius-topleft:10px;-moz-border-radius-bottomleft:10px;border-top-left-radius:10px;border-bottom-left-radius:10px}.br-right{-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-radius-topright:10px;-moz-border-radius-bottomright:10px;border-top-right-radius:10px;border-bottom-right-radius:10px}.btn-primary{background-color:#192a56;border:1px solid #192a56}.btn-primary:hover{background-color:#000;border:1px solid #000}@media (max-width:870px){#left,#right{max-width:100%}.br-left{-webkit-border-top-left-radius:10px;-moz-border-radius-topleft:10px;-moz-border-radius-bottomleft:0;border-top-left-radius:10px;border-bottom-left-radius:0;-webkit-border-top-right-radius:10px;-moz-border-radius-topright:10px;-moz-border-radius-bottomright:0;border-top-right-radius:10px;border-bottom-right-radius:0}.br-right{-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:10px;-moz-border-radius-topright:0;-moz-border-radius-bottomright:10px;border-top-right-radius:0;border-bottom-right-radius:10px;-moz-border-radius-bottomleft:10px;border-bottom-left-radius:10px}}</style> <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script> <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script> <script>var firebaseConfig={apiKey:"AIzaSyBGqfTlzySfnhtN50VXAz_JvUsYrQ9AjxY",authDomain:"iota-guide-618c4.firebaseapp.com",databaseURL:"https://iota-guide-618c4.firebaseio.com",projectId:"iota-guide-618c4",storageBucket:"",messagingSenderId:"1014151536102",appId:"1:1014151536102:web:2eaa305d4c8c8508624a27",measurementId:"G-58Y6M355EQ"};firebase.initializeApp(firebaseConfig),firebase.database();const db=firebase.database();function validateEmail(e){return/^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/.test(e)}function validateName(e){return/^[a-zA-Z]{3,}$/.test(e)}function validate(){var e=!1,a=!1,s=$("#emailInput"),i=$("#nameInput"),t=$("#emailInput").val(),r=$("#nameInput").val();(validateEmail(t)?(s.css("border-color","green"),s.css("color","green"),e=!0):(s.css("border-color","red"),s.css("color","red"),e=!1,displaySignupResult(!1)),validateName(r)?(i.css("border-color","green"),i.css("color","green"),a=!0):(i.css("border-color","red"),i.css("color","red"),a=!1,displaySignupResult(!1)),a&&e)&&writeUserData({name:r,email:t})}function displaySignupResult(e){e?($("#signup-status").css("color","green"),$("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.')):($("#signup-status").css("color","red"),$("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))}function writeUserData(e){db.ref("/signup_emails").push({name:e.name,email:e.email},function(e){displaySignupResult(!e)})}$("#validate").on("click",validate);</script> </body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54cc3abd02.js" crossorigin="anonymous"></script>
+    <title>L/EARN IOTA - Sign up</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container_fluid mt-5">
+            <div id="left" class="br-left">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center mt-3 mb-3">L/EARN IOTA</h2>
+                        <p class="pl-3 pr-3">Development is underway and Phase 1 will hopefully be launching very soon. You can use the "Get Notified" form to sign up to the mailing list and be one of the first to know when any news happens. Your email will only ever be used to contact you regarding the progress of this platform.</p>
+                        <p class="pl-3 pr-3"> You can find more about this project by visiting <a href="/about">About IOTA Guide</a> and if you like what is happening then feel free to <a href="/donate-contribute">Donate</a></p>
+                        <p class="pt-5 pl-3 pr-3 text-center"><a href="/" class="btn btn-outline-secondary">Back to IOTA Guide</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="br-right">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center mt-3">Get Notified</h2>
+                        <p class="text-center" id="signup-status"></p>
+                        <div class="p-4 pt-0 mt-0">
+                            <div class="form-group">
+                                <label for="NameInput">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Ben Lewisham">
+                            </div>
+                            <div class="form-group">
+                                <label for="EmailInput">Email</label>
+                                <input type="text" class="form-control" id="emailInput" placeholder="ben@example.com">
+                                <br/> <small id="emailValidationStatus"></small></div>
+                            <div class="text-center">
+                                <p><small>By signing up you agree for the storing of your email address to be used ONLY to contact you with updates to this platform</small></p>
+                                <button type="submit" class="btn btn-primary" id="validate">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        body,
+        html {
+            height: 100vh
+        }
+        
+        body {
+            background-color: #f1f1f1;
+            font-weight: 600;
+            font-family: Montserrat, sans-serif
+        }
+        
+        .wrapper {
+            width: 100%
+        }
+        
+        .v-align {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+        
+        .container_fluid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 850px;
+            max-width: 95%;
+            margin: 0 auto
+        }
+        
+        #left {
+            padding: 10px;
+            background-color: #192a56;
+            flex-grow: 1;
+            color: #fff;
+            max-width: 425px;
+            min-width: 400px;
+            -webkit-box-shadow: -1px 0 5px 0 rgba(196, 196, 196, .75);
+            -moz-box-shadow: -1px 0 5px 0 rgba(196, 196, 196, .75);
+            box-shadow: -1px 0 5px 0 rgba(196, 196, 196, .75)
+        }
+        
+        #right {
+            padding: 10px;
+            background-color: #fff;
+            flex-grow: 1;
+            max-width: 425px;
+            min-width: 400px;
+            -webkit-box-shadow: 1px 0 5px 0 rgba(196, 196, 196, .75);
+            -moz-box-shadow: 1px 0 5px 0 rgba(196, 196, 196, .75);
+            box-shadow: 1px 0 5px 0 rgba(196, 196, 196, .75)
+        }
+        
+        .br-left {
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-bottom-left-radius: 10px;
+            -moz-border-radius-topleft: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px
+        }
+        
+        .br-right {
+            -webkit-border-top-right-radius: 10px;
+            -webkit-border-bottom-right-radius: 10px;
+            -moz-border-radius-topright: 10px;
+            -moz-border-radius-bottomright: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px
+        }
+        
+        .btn-primary {
+            background-color: #192a56;
+            border: 1px solid #192a56
+        }
+        
+        .btn-primary:hover {
+            background-color: #000;
+            border: 1px solid #000
+        }
+        
+        @media (max-width:870px) {
+            #left,
+            #right {
+                max-width: 100%
+            }
+            .br-left {
+                -webkit-border-top-left-radius: 10px;
+                -moz-border-radius-topleft: 10px;
+                -moz-border-radius-bottomleft: 0;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 0;
+                -webkit-border-top-right-radius: 10px;
+                -moz-border-radius-topright: 10px;
+                -moz-border-radius-bottomright: 0;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 0
+            }
+            .br-right {
+                -webkit-border-top-right-radius: 0;
+                -webkit-border-bottom-right-radius: 10px;
+                -moz-border-radius-topright: 0;
+                -moz-border-radius-bottomright: 10px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 10px;
+                -moz-border-radius-bottomleft: 10px;
+                border-bottom-left-radius: 10px
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBGqfTlzySfnhtN50VXAz_JvUsYrQ9AjxY",
+            authDomain: "iota-guide-618c4.firebaseapp.com",
+            databaseURL: "https://iota-guide-618c4.firebaseio.com",
+            projectId: "iota-guide-618c4",
+            storageBucket: "",
+            messagingSenderId: "1014151536102",
+            appId: "1:1014151536102:web:2eaa305d4c8c8508624a27",
+            measurementId: "G-58Y6M355EQ"
+        };
+        firebase.initializeApp(firebaseConfig), firebase.database();
+        const db = firebase.database();
+
+        function validateEmail(e) {
+            return /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/.test(e)
+        }
+
+        function validateName(e) {
+            return /^[a-zA-Z]{3,}$/.test(e)
+        }
+
+        function validate() {
+            var e = !1,
+                a = !1,
+                s = $("#emailInput"),
+                i = $("#nameInput"),
+                t = $("#emailInput").val(),
+                r = $("#nameInput").val();
+            (validateEmail(t) ? (s.css("border-color", "green"), s.css("color", "green"), e = !0) : (s.css("border-color", "red"), s.css("color", "red"), e = !1, displaySignupResult(!1)), validateName(r) ? (i.css("border-color", "green"), i.css("color", "green"), a = !0) : (i.css("border-color", "red"), i.css("color", "red"), a = !1, displaySignupResult(!1)), a && e) && writeUserData({
+                name: r,
+                email: t
+            })
+        }
+
+        function displaySignupResult(e) {
+            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.')) : ($("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
+        }
+
+        function writeUserData(e) {
+            db.ref("/signup_emails").push({
+                name: e.name,
+                email: e.email
+            }, function(e) {
+                console.log("Here is the error, Needed to debug for live env.");
+                consol.log(e);
+                displaySignupResult(!e)
+            })
+        }
+        $("#validate").on("click", validate);
+    </script>
+</body>
+
+</html>
