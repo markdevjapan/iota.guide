@@ -84,7 +84,7 @@ draft: false
 			</div>
 			<div class="row mt-2" id="feedback">
 				<h2 class="mb-4">Feedback/Suggestions</h2>
-				<p>This is a community site aimed at providing the best and</p>
+				<p>This is a community site aimed at providing the best and most relevant information to its users, you!. If you have a suggestion then get in touch. Let's make this site awesome together</p>
 			</div>
 		</main>
 	</div>

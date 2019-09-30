@@ -12,7 +12,6 @@ aliases:
 		<div class="row pt-5">
 			<div class="col">
 				<h1 class="mb-3"><a href="{{< baseurl >}}/article/how-to-generate-iota-wallet-seed">How to generate your IOTA Wallet Seed</a></h1>
-				<p>On a mission to raise IOTA awareness, educate developers in using IOTA and providing the ultimate online learning management system for IOTA.</p>
 			</div>
 		</div>
 	</div>
