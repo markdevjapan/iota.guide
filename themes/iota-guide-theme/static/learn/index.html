@@ -186,6 +186,7 @@
         }
 
         function validate() {
+            $('#validate').attr('disabled','disabled');
             var e = !1,
                 a = !1,
                 s = $("#emailInput"),
@@ -199,10 +200,14 @@
         }
 
         function displaySignupResult(e) {
-            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.')) : ($("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
+            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.')) : ($('#validate').removeAttr('disabled'), $('#emailInput').removeAttr('disabled'), $('#nameInput').removeAttr('disabled'), $("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
         }
 
         function writeUserData(e) {
+            $('#emailInput').attr('disabled','disabled');
+            $('#nameInput').attr('disabled','disabled');
+            
+            
             db.ref("/signup_emails").push({
                 name: e.name,
                 email: e.email
