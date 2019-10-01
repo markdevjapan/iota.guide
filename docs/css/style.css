@@ -296,4 +296,8 @@ blockquote {
 	#top-menu.expanded .col-sm-4:nth-child(1) {
 		margin-bottom: 30px;
 	}
+
+	.table {
+		font-size: 15px;
+	}
 }
