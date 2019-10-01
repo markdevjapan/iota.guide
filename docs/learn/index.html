@@ -200,7 +200,7 @@
         }
 
         function displaySignupResult(e) {
-            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up. <br/><a href="https://twitter.com/iotaguide/status/1178808864051007488" target="_blank" class="btn btn-success mt-4">Please consider retweeting us</a>')) : ($('#validate').removeAttr('disabled'), $('#emailInput').removeAttr('disabled'), $('#nameInput').removeAttr('disabled'), $("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
+            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.</p><p class="text-center"><a href="https://twitter.com/iotaguide/status/1178808864051007488" target="_blank" class="mt-4" style="background-color: #1DA1F2; color: #fff; border-radius: 10px; padding: 10px 18px"><i class="fab fa-twitter"></i> Retweet</a>')) : ($('#validate').removeAttr('disabled'), $('#emailInput').removeAttr('disabled'), $('#nameInput').removeAttr('disabled'), $("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
         }
 
         function writeUserData(e) {
