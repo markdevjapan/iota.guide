@@ -200,7 +200,7 @@
         }
 
         function displaySignupResult(e) {
-            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up.')) : ($('#validate').removeAttr('disabled'), $('#emailInput').removeAttr('disabled'), $('#nameInput').removeAttr('disabled'), $("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
+            e ? ($("#signup-status").css("color", "green"), $("#signup-status").html('<i class="fas fa-check"></i> Success, You are signed up. <br/><a href="https://twitter.com/iotaguide/status/1178808864051007488" target="_blank" class="btn btn-success mt-4">Please consider retweeting us</a>')) : ($('#validate').removeAttr('disabled'), $('#emailInput').removeAttr('disabled'), $('#nameInput').removeAttr('disabled'), $("#signup-status").css("color", "red"), $("#signup-status").html('<i class="fas fa-times"></i> There was an issue.'))
         }
 
         function writeUserData(e) {
