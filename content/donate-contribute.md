@@ -38,7 +38,7 @@ draft: false
 				<div class="col text-center">
 					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA" class="mb-5" />
 					<p>Address:</p>
-					<p>IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNU<br/>WOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW</p>
+					<p>IY9BVQBMQAN9WOHIOSZO<br/>TRXGKBIMRCWJCTTOXNUW<br/>OYJKFKOWVHMJOTSRIGIT<br/>PPRYNXPKCXZABSCPMSAIZVPXMFPIKW</p>
 				</div>
 			</div>
 			<div class="row">
