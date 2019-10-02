@@ -38,7 +38,7 @@ draft: false
 				<div class="col text-center">
 				<input type="text" id="IOTAAddress" class="p-2" style="display:none;" value="IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW">
 					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA"/>
-					<p><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('#IOTAAddress')">Copy Address</button></p>
+					<p><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
 				</div>
 			</div>
 			<div class="row">
