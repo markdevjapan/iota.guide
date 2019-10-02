@@ -39,7 +39,9 @@ draft: false
 			<div class="row pb-5 iota-donation-address">
 				<div class="col text-center">
 					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA"/>
-					<p id="IOTAButtonContainer"><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
+					<p id="IOTACopyConfirm"></p>
+					<p id="IOTAButtonContainer">
+					<button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
 				</div>
 			</div>
 			<div class="row">
@@ -55,19 +57,19 @@ draft: false
 					<tbody>
 						<tr>
 						<th scope="row">BTC</th>
-						<td>3E6z48KzwwB4AM61BzzeGcBURDr2GnWPcu</td>
+						<td class="break-word">3E6z48KzwwB4AM61BzzeGcBURDr2GnWPcu</td>
 						</tr>
 						<tr>
 						<th scope="row">LTC</th>
-						<td>MMqhXu6UWVNthPMqqTn29YWdNCFQ2b9ixe</td>
+						<td class="break-word">MMqhXu6UWVNthPMqqTn29YWdNCFQ2b9ixe</td>
 						</tr>
 						<tr>
 						<th scope="row">ETH</th>
-						<td>0x225fef739DF5e22Fbb7036B183A75E6434e972Ba</td>
+						<td class="break-word">0x225fef739DF5e22Fbb7036B183A75E6434e972Ba</td>
 						</tr>
 						<tr>
 						<th scope="row">BNB</th>
-						<td>bnb1a8ydxphn5zqumfpwhtuv0jxj2hxvwpcwe8n88h</td>
+						<td class="break-word">bnb1a8ydxphn5zqumfpwhtuv0jxj2hxvwpcwe8n88h</td>
 						</tr>
 					</tbody>
 					</table>

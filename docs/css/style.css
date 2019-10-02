@@ -21,10 +21,20 @@ h1, h2, h3, h4, p {
 
 h2 { font-size: 22px; }
 
+main {
+	min-width: 450px;
+}
 main p {
 	margin-bottom: 40px;
 }
 
+.break-word {
+	-ms-word-break: break-all;
+    word-break: break-all;
+
+ 	/* Non standard for webkit */
+     word-break: break-word;
+}
 
 #main-wrapper {
 	display: flex;
@@ -272,13 +282,7 @@ blockquote {
 	}
 }
 
-#IOTAAddress {
-	width: 600px;
-	height: 95px;
-	border: 0;
-	resize: none;
-	background-color: #f1f1f1;
-}
+
 
 @media (max-width: 800px) {
 	#home-header {
