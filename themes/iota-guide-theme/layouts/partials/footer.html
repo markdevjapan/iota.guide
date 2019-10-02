@@ -12,6 +12,14 @@
     }
   });
 
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).val()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+
   $('#play-iota-sound').click(function() {
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', '{{ .Site.BaseURL }}/mp3/iota_en_gb.mp3');

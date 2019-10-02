@@ -36,9 +36,9 @@ draft: false
 			</div>
 			<div class="row pb-5 iota-donation-address">
 				<div class="col text-center">
-					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA" class="mb-5" />
-					<p>Address:</p>
-					<p>IY9BVQBMQAN9WOHIOSZO<br/>TRXGKBIMRCWJCTTOXNUW<br/>OYJKFKOWVHMJOTSRIGIT<br/>PPRYNXPKCXZABSCPMSAIZVPXMFPIKW</p>
+				<input type="text" id="IOTAAddress" class="p-2" style="display:none;" value="IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW">
+					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA"/>
+					<p><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('#IOTAAddress')">Copy Address</button></p>
 				</div>
 			</div>
 			<div class="row">
