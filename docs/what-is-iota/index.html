@@ -109,6 +109,8 @@
   function copyToClipboard(element) {
     var $temp = $("<input>");
     $("body").append($temp);
+    $temp.contentEditable = true;
+    $temp.readOnly = false;
     $temp.val($(element).val()).select();
     document.execCommand("copy");
     $temp.remove();
