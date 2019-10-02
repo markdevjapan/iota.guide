@@ -84,7 +84,7 @@
             <div class="row pb-5 iota-donation-address">
                 <div class="col text-center">
                     <img src="https://iota.guide/img/iota-donation-address.jpg" alt="Donate IOTA"/>
-                    <p><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
+                    <p id="IOTAButtonContainer"><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
                 </div>
             </div>
             <div class="row">
@@ -178,10 +178,12 @@
     textarea = document.createElement('textarea');
     textarea.setAttribute('readonly', true);
     textarea.setAttribute('contenteditable', true);
-    textarea.style.position = 'fixed'; 
+    textarea.style.display = 'fixed'; 
+    textarea.style.height = "0px";
+    textarea.style.width = "0px";
     textarea.value = string;
 
-    document.body.appendChild(textarea);
+    document.getElementById('IOTAButtonContainer').appendChild(textarea);
 
     textarea.focus();
     textarea.select();
@@ -199,7 +201,7 @@
     console.error(err);
     result = null;
   } finally {
-    document.body.removeChild(textarea);
+    document.getElementById('IOTAButtonContainer').removeChild(textarea);
   }
 
   

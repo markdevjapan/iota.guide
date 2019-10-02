@@ -39,7 +39,7 @@ draft: false
 			<div class="row pb-5 iota-donation-address">
 				<div class="col text-center">
 					<img src="{{< baseurl >}}/img/iota-donation-address.jpg" alt="Donate IOTA"/>
-					<p><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
+					<p id="IOTAButtonContainer"><button class="btn btn-outline-success mt-3" onclick="copyToClipboard('IY9BVQBMQAN9WOHIOSZOTRXGKBIMRCWJCTTOXNUWOYJKFKOWVHMJOTSRIGITPPRYNXPKCXZABSCPMSAIZVPXMFPIKW')">Copy Address</button></p>
 				</div>
 			</div>
 			<div class="row">

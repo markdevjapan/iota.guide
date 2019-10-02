@@ -20,10 +20,12 @@
     textarea = document.createElement('textarea');
     textarea.setAttribute('readonly', true);
     textarea.setAttribute('contenteditable', true);
-    textarea.style.position = 'fixed'; // prevent scroll from jumping to the bottom when focus is set.
+    textarea.style.display = 'fixed'; // prevent scroll from jumping to the bottom when focus is set.
+    textarea.style.height = "0px";
+    textarea.style.width = "0px";
     textarea.value = string;
 
-    document.body.appendChild(textarea);
+    document.getElementById('IOTAButtonContainer').appendChild(textarea);
 
     textarea.focus();
     textarea.select();
@@ -41,7 +43,7 @@
     console.error(err);
     result = null;
   } finally {
-    document.body.removeChild(textarea);
+    document.getElementById('IOTAButtonContainer').removeChild(textarea);
   }
 
   // manual copy fallback using prompt
